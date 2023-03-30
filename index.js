@@ -5,9 +5,6 @@ function renderGame(){
   document.body.classList.add("questionTriggeredfun", "fun")
   isMain=false;
   let dice = Math.floor(Math.random()*5+1)
-  let defaultHtml=`<h1 id="title">🤖 PARTY GAMES 🤖</h1>
-  <h4 id="activity">Click the button to play</h4>
-  <button id="get-activity"></button>`
   let contentHtml=''
   switch (dice){
     case 1:
@@ -17,10 +14,10 @@ function renderGame(){
         console.log(data)
         contentHtml=`
           <h1 id="title">You are assigned to: </h1>
-          <h1 class="topic">✌TRUTH✌</h1> 
-          <h2>Your questions is:</h2>
+          <h1 class="topic">✌ TRUTH ✌</h1> 
+          <h2>Your question is:</h2>
           <p>${data.question}</p> 
-          <h4 id="activity">Click to go back to main page</h4>
+          <h3 id="activity">Click to go back to main page</h3>
           `
         document.getElementById("main").innerHTML=contentHtml
       })
@@ -32,10 +29,10 @@ function renderGame(){
         console.log(data)
         contentHtml=`
           <h1 id="title">You are assigned to </h1>
-          <h1 class="topic">😂DARE😂</h1>
-          <h2>Your questions is:</h2>
+          <h1 class="topic">😂 DARE 😂</h1>
+          <h2>Your question is:</h2>
           <p>${data.question}</p> 
-          <h4 id="activity">Click to go back to main page</h4>
+          <h3 id="activity">Click to go back to main page</h3>
           `
         document.getElementById("main").innerHTML=contentHtml
       })
@@ -47,10 +44,10 @@ function renderGame(){
         console.log(data)
         contentHtml=`
           <h1 id="title">You are assigned to: </h1>
-          <h1 class="topic">👏WOULD YOU RATHER👏</h1>
-          <h2>Your questions is:</h2>
+          <h1 class="topic">👏 WOULD YOU RATHER 👏</h1>
+          <h2>Your question is:</h2>
           <p>${data.question} Explain Why.</p> 
-          <h4 id="activity">Click to go back to main page</h4>
+          <h3 id="activity">Click to go back to main page</h3>
           `
         document.getElementById("main").innerHTML=contentHtml
       })
@@ -62,10 +59,10 @@ function renderGame(){
         console.log(data)
         contentHtml=`
           <h1 id="title">You are assigned to:</h1>
-          <h1 class="topic">🙏PARANOIA QUESTION🙏</h1>
-          <h2>Your questions is:</h2>
+          <h1 class="topic">🙏 PARANOIA QUESTION 🙏</h1>
+          <h2>Your question is:</h2>
           <p>${data.question} Explain Why.</p> 
-          <h4 id="activity">Click to go back to main page</h4>
+          <h3 id="activity">Click to go back to main page</h3>
           `
         document.getElementById("main").innerHTML=contentHtml
       })
@@ -80,7 +77,7 @@ function renderGame(){
           <h1 class="topic"> 🍾 NEVER HAVE I EVER 🍾</h1>
           <h2>If u ever have done it before , lets' drink </h2>
           <p>${data.question} Explain Why.</p> 
-          <h4 id="activity">Click to go back to main page</h4>
+          <h3 id="activity">Click to go back to main page</h3>
           `
         document.getElementById("main").innerHTML=contentHtml
       })
@@ -101,6 +98,7 @@ function renderMain(){
 
 document.getElementById("get-activity").addEventListener("click", function(){
   isMain ? renderGame() : renderMain()
+  document.getElementById("get-activity").classList.toggle("back")
 })
 
 renderMain()
