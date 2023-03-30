@@ -1,3 +1,7 @@
+
+*{
+    font-size:50px
+}
 body {
     /* uigradients.com */
     background: #FC5C7D;  /* fallback for old browsers */
@@ -12,10 +16,9 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
     align-items: center;
     font-family: 'Delicious Handrawn', cursive,  sans-serif;
 }
-h1,h3{
-    font-size:xx-large
-}
+
 main{
+    width:80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +41,8 @@ background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, F
 }
 
 .topic{
-    font-size: 2.1em;
+    font-weight: bold;
+    font-size: 1.2em;
     color: white;
     text-shadow: 1px 2px 4px black;
 }
@@ -63,7 +67,7 @@ p{
     width:80%
 }
 img{
-    width:65%;
+    width:80%;
     margin-bottom: 1.1em;
     
 }
@@ -75,4 +79,8 @@ h4{
 }
 h1{
     margin:0.4em
+}
+#title{
+    margin:1em;
+    font-size:1.5rem
 }

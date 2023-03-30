@@ -17,7 +17,7 @@ function renderGame(){
         console.log(data)
         contentHtml=`
           <h1 id="title">You are assigned to: </h1>
-          <h1 class="topic">✌ TRUTH ✌ </h1> 
+          <h1 class="topic">✌TRUTH✌</h1> 
           <h2>Your questions is:</h2>
           <p>${data.question}</p> 
           <h4 id="activity">Click to go back to main page</h4>
@@ -32,7 +32,7 @@ function renderGame(){
         console.log(data)
         contentHtml=`
           <h1 id="title">You are assigned to </h1>
-          <h1 class="topic">😂 DARE 😂</h1>
+          <h1 class="topic">😂DARE😂</h1>
           <h2>Your questions is:</h2>
           <p>${data.question}</p> 
           <h4 id="activity">Click to go back to main page</h4>
@@ -47,7 +47,7 @@ function renderGame(){
         console.log(data)
         contentHtml=`
           <h1 id="title">You are assigned to: </h1>
-          <h1 class="topic">👏 WOULD YOU RATHER 👏</h1>
+          <h1 class="topic">👏WOULD YOU RATHER👏</h1>
           <h2>Your questions is:</h2>
           <p>${data.question} Explain Why.</p> 
           <h4 id="activity">Click to go back to main page</h4>
@@ -62,7 +62,7 @@ function renderGame(){
         console.log(data)
         contentHtml=`
           <h1 id="title">You are assigned to:</h1>
-          <h1 class="topic">🙏 PARANOIA QUESTION 🙏</h1>
+          <h1 class="topic">🙏PARANOIA QUESTION🙏</h1>
           <h2>Your questions is:</h2>
           <p>${data.question} Explain Why.</p> 
           <h4 id="activity">Click to go back to main page</h4>
